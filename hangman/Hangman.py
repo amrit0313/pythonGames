@@ -13,7 +13,6 @@ print(hangmanArt.logo)
 wordList = hangmanWords.words
 index = 0
 choosenWord = random.choice(wordList)
-print(f"the word to guess is {choosenWord}")
 
 display = []
 
@@ -25,8 +24,9 @@ lives = 7
 
 
 endOfGame = False
+print("Ok, let's get started")
 while not endOfGame:
-    guess = input("Guess the word: ").lower()
+    guess = input("Guess one of the letter: ").lower()
     clear()
     # for x in choosenWord:
     #     if x == guess:
@@ -48,7 +48,7 @@ while not endOfGame:
          if lives == 0:
              print("hey hangman tied up, wanna give a new try")
              endOfGame = True    
-if "_" not in display:
+    if "_" not in display:
         print("Damn!!! you guessed it right")
         endOfGame = True
    
