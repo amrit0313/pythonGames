@@ -1,6 +1,5 @@
 from turtle import Turtle
 
-from oauthlib.uri_validate import segment
 
 STARTING_POSITION = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
